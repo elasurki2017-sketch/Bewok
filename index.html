@@ -794,7 +794,7 @@ async function saveRow() {
     
 
 // Validasi bulan dan tahun Date harus sama dengan Period
-const selectedDate = new Date(date);
+const selectedDate = new Date(date + "T00:00:00");
 
 const dateMonth = selectedDate.toLocaleString("en-US", {
     month: "long"
