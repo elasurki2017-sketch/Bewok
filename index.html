@@ -1669,12 +1669,12 @@ Object.keys(groups).forEach(date => {
 
     const list = groups[date];
 
-    const d = new Date(date);
+    const d = new Date(date + "T00:00:00");
 
     let dateText = "";
 
 if (date) {
-    const d = new Date(date);
+    const d = new Date(date + "T00:00:00");
 
     dateText =
         d.getDate() + " " +
