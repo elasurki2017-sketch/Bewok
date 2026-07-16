@@ -1939,7 +1939,13 @@ for (let i = 1; i <= totalPages; i++) {
     );
 }
 
-    doc.save("Toll_Parking_Report.pdf");
+    const month = document.getElementById("monthSelect").options[
+    document.getElementById("monthSelect").selectedIndex
+].text;
+
+const year = document.getElementById("yearSelect").value;
+
+doc.save(`Toll Parking ${month} ${year}.pdf`);
 
 }
   </script>
